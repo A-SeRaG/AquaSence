@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sensor Simulator</title>
+    <link rel="stylesheet" href="/CSS/control.css">
+</head>
+<body>
+    <h1>Sensor Simulator</h1>
+    <h2>Dashboard Controls</h2>
+    <div class="line">
+        <label>Flow Rate</label>
+        <input type="range" id="flow" min="0" max="50">
+    </div>
+
+    <div class="line">
+        <label>Water Pressure </label>
+        <input type="range" id="pressure" min="0" max="5">
+    </div>
+    <div class="line">
+        <label id="vState">Valve State</label>
+        <div class="btn">
+            <button id="ov"> Open Valve</button>
+            <button id="cv"> Close Valve</button>
+        </div>
+    </div>
+    <div class="line">
+        <label>Leakage </label>
+        <div class="btn">
+            <button id="on"> On </button>
+            <button id="off"> Off </button>
+        </div>
+    </div>
+    <h2>Irrigation Controls</h2>
+    <div class="line">
+        <label>Soil Moisture</label>
+        <input type="range" id="soil" min="0" max="100" value="50">
+    </div>
+    <div class="line">
+        <label>Sprinklers</label>
+        <div class="btn">
+            <button id="start"> Start </button>
+            <button id="stop"> Stop </button>
+        </div>
+    </div>
+
+    <script type="module" src="/JS/firebase.js"></script>
+    <script type="module" src="/JS/control.js"></script>
+</body>
+</html>

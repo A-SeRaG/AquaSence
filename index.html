@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AquaSense</title>
+    <link rel="stylesheet" href="/CSS/style.css" />
+    <link rel="shortcut icon" href="/ASSETS/icon.png" type="image/x-icon" />
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body>
+    <!-- --------------------------HEADER-------------------------- -->
+    <div class="header">
+        <div class="logo">
+            <img src="ASSETS/logo-c .png" alt="logo" />
+        </div>
+
+        <div class="navbar">
+            <ul>
+                <li><a href="/index.html">Dashboard</a></li>
+                <li><a href="/irrigation.html">Irrigation</a></li>
+                <li><a href="/billing.html">Billing</a></li>
+                <li><a href="#footer">About US</a></li>
+            </ul>
+        </div>
+
+        <div class="icons">
+            <i class="fa-solid fa-user"></i>
+        </div>
+    </div>
+
+    <!-- --------------------------CONTENT-------------------------- -->
+    <h1>Dashboard</h1>
+    <div class="container">
+        <div class="waterUsage">
+            <h2>Water Usage</h2>
+            <div class="input-section">
+                <label>Number of People:</label>
+                <input type="number" id="members" value="1" min="1" max="10" />
+                <button onclick="submit()">Calculate</button>
+            </div>
+
+            <div class="card">
+                <div class="widget">
+                    <h2>Daily Usage</h2>
+                    <h3><span id="real-d">0 L</span> / <span id="max-d">0 L</span></h3>
+                </div>
+                <div class="widget">
+                    <h2>Monthly Usage</h2>
+                    <h3><span id="real-m">0 L</span> / <span id="max-m">0 L</span></h3>
+                </div>
+            </div>
+
+            <div class="progress-container">
+                <h3>Usage Level</h3>
+                <div class="progress-bar">
+                    <div class="progress" id="progress"></div>
+                </div>
+            </div>
+        </div>
+        <div class="waterUsage">
+            <canvas id="chart1"></canvas>
+        </div>
+        <div class="waterUsage">
+            <div class="element">
+                <h2>💧 Flow Rate: </h2>
+                <h2 id="flow">0 L/min</h2>
+            </div>
+            <h4>NOTE: Current flow rate is <span id="n1">Normal</span></h4>
+            <div class="element">
+                <h2>🔫 Water Pressure: </h2>
+                <h2 id="pressure">2 bar</h2>
+            </div>
+            <h4>NOTE: Current water pressure is <span id="n2">Normal</span></h4>
+            <div class="element">
+                <h2>🚰 Valve State: </h2>
+                <h2 id="valveS">OPEN</h2>
+            </div>
+        </div>
+        <div class="waterUsage">
+            <h2>🚨 Leakage State</h2>
+            <h2 id="leakageS">Safe</h2>
+        </div>
+    </div>
+
+    <!-- --------------------------FOOTER-------------------------- -->
+    <div class="footer" id="footer">
+        <div class="row">
+            <div class="col">
+                <img src="/ASSETS/logo-r .png" alt="footer-logo" />
+                <p>AquaSense is a specialized technology company headquartered in Egypt. The company’s mission is to promote global water sustainability through intelligent, real-time management systems that empower users to eliminate waste and reduce environmental impact.</p>
+            </div>
+            <div class="col">
+                <h2>LINKS</h2>
+                <ul>
+                    <li><a href="">Dashboard</a></li>
+                    <li><a href="">Irrigation</a></li>
+                    <li><a href="">Billing</a></li>
+                    <li><a href="">About Us</a></li>
+                    <li><a href="">Policies</a></li>
+                    <li><a href="">Support</a></li>
+                </ul>
+            </div>
+            <div class="col">
+                <h2>SUBSCRIBE</h2>
+                <div class="sub">
+
+                    <i class="fa-regular fa-envelope"></i>
+                    <input type="email" placeholder="Enter your e-mail">
+                    <button><i class="fa-regular fa-paper-plane"></i></button>
+                </div>
+            </div>
+        </div>
+        <h4>&copy; 2026 AquaSense. All Rights Reserved.</h4>
+    </div>
+
+    <script src="https://kit.fontawesome.com/5fddc3700c.js" crossorigin="anonymous"></script>
+    <script type="module" src="/JS/firebase.js"></script>
+    <script type="module" src="/JS/script.js"></script>
+    <script type="module" src="/JS/dashboard.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AquaSense</title>
+    <link rel="stylesheet" href="/CSS/style.css">
+    <link rel="shortcut icon" href="/ASSETS/icon.png" type="image/x-icon">
+
+</head>
+<body>
+
+
+    <div class="header">
+        <div class="logo">
+            <img src="ASSETS/logo-c .png" alt="logo">
+        </div>
+
+        <div class="navbar">
+            <ul>
+                <li><a href="/index.html">Dashboard</a></li>
+                <li><a href="/irrigation.html">Irrigation</a></li>
+                <li><a href="/billing.html">Billing</a></li>
+                <li><a href="#footer">About US</a></li>
+            </ul>
+        </div>
+
+        <div class="icons">
+            <i class="fa-solid fa-user"></i>
+        </div>
+
+    </div>
+
+    <h1>Irrigation</h1>
+    <div class="container">
+        <div class="waterUsage">
+            <h2>🌱 Soil Moisture: </h2>
+            <h2 id="moisture">50 %</h2>
+        </div>
+        <div class="waterUsage">
+            <h2>💦 Sprinklers State: </h2>
+            <h2 id="Sprink">Stop</h2>
+        </div>
+    </div>
+
+    <!-- --------------------------FOOTER-------------------------- -->
+    <div class="footer" id="footer">
+        <div class="row">
+            <div class="col">
+                <img src="/ASSETS/logo-r .png" alt="footer-logo" />
+                <p>AquaSense is a specialized technology company headquartered in Egypt. The company’s mission is to promote global water sustainability through intelligent, real-time management systems that empower users to eliminate waste and reduce environmental impact.</p>
+            </div>
+            <div class="col">
+                <h2>LINKS</h2>
+                <ul>
+                    <li><a href="">Dashboard</a></li>
+                    <li><a href="">Irrigation</a></li>
+                    <li><a href="">Billing</a></li>
+                    <li><a href="">About Us</a></li>
+                    <li><a href="">Policies</a></li>
+                    <li><a href="">Support</a></li>
+                </ul>
+            </div>
+            <div class="col">
+                <h2>SUBSCRIBE</h2>
+                <div class="sub">
+
+                    <i class="fa-regular fa-envelope"></i>
+                    <input type="email" placeholder="Enter your e-mail">
+                    <button><i class="fa-regular fa-paper-plane"></i></button>
+                </div>
+            </div>
+        </div>
+        <h4>&copy; 2026 AquaSense. All Rights Reserved.</h4>
+    </div>
+
+    <script src="https://kit.fontawesome.com/5fddc3700c.js" crossorigin="anonymous"></script>
+    <script type="module" src="/JS/firebase.js"></script>
+    <script type="module" src="/JS/irrigation.js"></script>
+</body>
+</html>
